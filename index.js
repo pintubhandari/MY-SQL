@@ -17,6 +17,8 @@ try {
   console.log(err);
 }
 
+connection.end();    // to close connection
+
 let getRandomUser = () => {
   return {
     id: faker.string.uuid(),
